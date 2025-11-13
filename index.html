@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-512x512.png">
+    <img src="https://example.com/very-large-image.jpg">
+
     <title>Князькина Алина ИС-3.1</title>
     <style>
         body {
@@ -73,9 +80,17 @@
             <a href="testarr/">testarr</a>
             <a href="1.10.25/">Угадай число</a>
             <a href="Рисуем/index.html">рисунки</a>
-            <a href="5.html">Работа 5</a>
-            <a href="6.html">Работа 6</a>
+            
         </div>
     </div>
-</body>
+    <div id="loader">
+    <div class="spinner"></div>
+    <div class="loader-text">Загружаю...</div>
+</div>
+<script>
+    window.addEventListener('load', function() {
+        document.getElementById('loader').style.display = 'none';
+    });
+</script>
+
 </html>
